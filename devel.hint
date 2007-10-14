@@ -1,0 +1,6 @@
+category: Libs
+requires: cygwin libmcrypt libtool
+external-source: libmcrypt
+sdesc: "Multiple encryption algorithm library (development)"
+ldesc: "Libmcrypt is a thread-safe library providing a uniform interface 
+to access several block and stream encryption algorithms."

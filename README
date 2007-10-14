@@ -1,0 +1,135 @@
+libmcrypt
+------------------------------------------
+Libmcrypt is a thread-safe library providing a uniform interface
+to access several block and stream encryption algorithms.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  libltdl3-1.5.23a-2
+
+Build requirements:
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.3.5-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://mcrypt.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/mcrypt/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libmcrypt-2.5.8-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libmcrypt-2.5.8-X.cygport all
+
+This will create:
+  /usr/src/libmcrypt-2.5.8-X-src.tar.bz2
+  /usr/src/libmcrypt-2.5.8-X.tar.bz2
+  /usr/src/libmcrypt-devel-2.5.8-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/cygmcrypt-4.dll
+  /usr/lib/libmcrypt/arcfour.dll
+  /usr/lib/libmcrypt/arcfour.la
+  /usr/lib/libmcrypt/blowfish-compat.dll
+  /usr/lib/libmcrypt/blowfish-compat.la
+  /usr/lib/libmcrypt/blowfish.dll
+  /usr/lib/libmcrypt/blowfish.la
+  /usr/lib/libmcrypt/cast-128.dll
+  /usr/lib/libmcrypt/cast-128.la
+  /usr/lib/libmcrypt/cast-256.dll
+  /usr/lib/libmcrypt/cast-256.la
+  /usr/lib/libmcrypt/cbc.dll
+  /usr/lib/libmcrypt/cbc.la
+  /usr/lib/libmcrypt/cfb.dll
+  /usr/lib/libmcrypt/cfb.la
+  /usr/lib/libmcrypt/ctr.dll
+  /usr/lib/libmcrypt/ctr.la
+  /usr/lib/libmcrypt/des.dll
+  /usr/lib/libmcrypt/des.la
+  /usr/lib/libmcrypt/ecb.dll
+  /usr/lib/libmcrypt/ecb.la
+  /usr/lib/libmcrypt/enigma.dll
+  /usr/lib/libmcrypt/enigma.la
+  /usr/lib/libmcrypt/gost.dll
+  /usr/lib/libmcrypt/gost.la
+  /usr/lib/libmcrypt/loki97.dll
+  /usr/lib/libmcrypt/loki97.la
+  /usr/lib/libmcrypt/ncfb.dll
+  /usr/lib/libmcrypt/ncfb.la
+  /usr/lib/libmcrypt/nofb.dll
+  /usr/lib/libmcrypt/nofb.la
+  /usr/lib/libmcrypt/ofb.dll
+  /usr/lib/libmcrypt/ofb.la
+  /usr/lib/libmcrypt/rc2.dll
+  /usr/lib/libmcrypt/rc2.la
+  /usr/lib/libmcrypt/rijndael-128.dll
+  /usr/lib/libmcrypt/rijndael-128.la
+  /usr/lib/libmcrypt/rijndael-192.dll
+  /usr/lib/libmcrypt/rijndael-192.la
+  /usr/lib/libmcrypt/rijndael-256.dll
+  /usr/lib/libmcrypt/rijndael-256.la
+  /usr/lib/libmcrypt/safer-sk128.dll
+  /usr/lib/libmcrypt/safer-sk128.la
+  /usr/lib/libmcrypt/safer-sk64.dll
+  /usr/lib/libmcrypt/safer-sk64.la
+  /usr/lib/libmcrypt/saferplus.dll
+  /usr/lib/libmcrypt/saferplus.la
+  /usr/lib/libmcrypt/serpent.dll
+  /usr/lib/libmcrypt/serpent.la
+  /usr/lib/libmcrypt/stream.dll
+  /usr/lib/libmcrypt/stream.la
+  /usr/lib/libmcrypt/threeway.dll
+  /usr/lib/libmcrypt/threeway.la
+  /usr/lib/libmcrypt/tripledes.dll
+  /usr/lib/libmcrypt/tripledes.la
+  /usr/lib/libmcrypt/twofish.dll
+  /usr/lib/libmcrypt/twofish.la
+  /usr/lib/libmcrypt/wake.dll
+  /usr/lib/libmcrypt/wake.la
+  /usr/lib/libmcrypt/xtea.dll
+  /usr/lib/libmcrypt/xtea.la
+  /usr/share/doc/Cygwin/libmcrypt-2.5.8.README
+  /usr/share/doc/libmcrypt-2.5.8/AUTHORS
+  /usr/share/doc/libmcrypt-2.5.8/COPYING.LIB
+  /usr/share/doc/libmcrypt-2.5.8/ChangeLog
+  /usr/share/doc/libmcrypt-2.5.8/INSTALL
+  /usr/share/doc/libmcrypt-2.5.8/NEWS
+  /usr/share/doc/libmcrypt-2.5.8/README
+  /usr/share/doc/libmcrypt-2.5.8/THANKS
+  /usr/share/doc/libmcrypt-2.5.8/TODO
+
+(libmcrypt-devel)
+  /usr/bin/libmcrypt-config
+  /usr/include/mcrypt.h
+  /usr/include/mutils/mcrypt.h
+  /usr/lib/libmcrypt.dll.a
+  /usr/lib/libmcrypt.la
+  /usr/share/aclocal/libmcrypt.m4
+  /usr/share/man/man3/mcrypt.3.gz
+
+------------------
+
+Port Notes:
+
+----- version 2.5.8-1 -----
+Version bump; last official release was 2.5.7-2.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

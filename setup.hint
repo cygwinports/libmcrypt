@@ -1,0 +1,5 @@
+category: Libs
+requires: cygwin libltdl3
+sdesc: "Multiple encryption algorithm library (runtime)"
+ldesc: "Libmcrypt is a thread-safe library providing a uniform interface 
+to access several block and stream encryption algorithms."
