@@ -1,5 +1,6 @@
-category: _obsolete
-requires: libmcrypt4
-sdesc: "Multiple encryption algorithm library (source)"
+category: Libs
+requires: cygwin
+external-source: libmcrypt
+sdesc: "Multiple encryption algorithm library (runtime)"
 ldesc: "Libmcrypt is a thread-safe library providing a uniform interface 
 to access several block and stream encryption algorithms."

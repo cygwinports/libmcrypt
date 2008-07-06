@@ -1,0 +1,24 @@
+DESCRIPTION="Library for multiple encryption methods"
+HOMEPAGE="http://mcrypt.sourceforge.net/"
+SRC_URI="mirror://sourceforge/mcrypt/${P}.tar.bz2"
+
+abi=4
+PKG_NAMES="${PN} ${PN}${abi} ${PN}-devel"
+PKG_HINTS="setup dll devel"
+PKG_CONTENTS[0]=	# empty
+PKG_CONTENTS[1]="usr/bin/*-${abi}.dll usr/share/doc/"
+PKG_CONTENTS[2]="usr/bin/${PN}-config usr/include/ usr/lib/${PN}.*
+                 usr/share/aclocal/ usr/share/man/"
+
+DIFF_EXCLUDES="Makefile mcrypt.h config-h.in libtool stamp-h1 libltdl"
+
+src_compile() {
+	cd ${S}
+	[ -f Makefile ] && make distclean DIST_SUBDIRS=
+	ACLOCAL="aclocal-1.9" cygautoreconf
+
+	cd ${B}
+	# dynamic loading no longer default
+	cygconf
+	cygmake
+}
