@@ -1,5 +1,5 @@
 category: Libs
-requires: cygwin libmcrypt4
+requires: libmcrypt4
 external-source: libmcrypt
 sdesc: "Multiple encryption algorithm library (development)"
 ldesc: "Libmcrypt is a thread-safe library providing a uniform interface 
